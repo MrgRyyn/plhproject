@@ -1,0 +1,77 @@
+<!doctype html>
+<html class=" scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <section class="relative flex flex-col items-center justify-center">
+        <nav class=" absolute mx-auto z-20 px-7 py-6 top-0 w-full">
+            <div class="flex items-center justify-between">
+                <!-- logo -->
+                <div class="pt-1">
+                    <h2 class="text-poppins font-semibold text-xl text-white">Tugas PLH</h2>
+                </div>
+                <!-- menu -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class=" font-medium text-white">Home</a>
+                    <a href="#penjelasan" class=" font-medium text-white">Penjelasan</a>
+                    <a href="#sejarah" class=" font-medium text-white">Sejarah</a>
+                </div>
+
+
+                 <!-- Hamburger Icon -->
+                    <button
+                    id="menu-btn"
+                    class="block hamburger md:hidden focus:outline-none"
+                >
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+                </div>
+
+                <!-- Mobile Menu -->
+                <div class="md:hidden">
+                <div
+                    id="menu"
+                    class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+                >
+                    <a href="#" class=" font-bold">Home</a>
+                    <a href="#penjelasan" class=" font-bold">Penjelasan</a>
+                    <a href="#sejarah" class=" font-bold">Sejarah</a>
+                </div>
+            </div>
+        </nav>
+        <img src="img/hero-sasi.jpg" alt="" class=" brightness-50 hero w-full object-cover">
+        <div class=" absolute container flex flex-col items-center justify-center px-5">
+            <h2 class=" text-7xl text-white text-lora font-bold md:text-9xl">SASI</h2>
+            <p class=" text-white text-poppins text-center text-sm"> budaya pelestarian lingkungan hidup di Maluku Tenggara</p>
+        </div>
+    </section>
+
+    <section id="penjelasan" class=" flex items-center justify-center px-10 py-10">
+        <div class=" container gap-7 flex flex-col justify-center items-center shadow-md bg-gray-100 rounded-xl px-20 py-10">
+            <h1 class=" text-7xl text-lora text-emerald-700">Apa itu SASI?</h1>
+            <p class=" text-center">Salah satu contoh kearifan lokal dalam pengelolaan dan perlindungan lingkungan hidup di Indonesia adalah "Sasi" yang diterapkan di Maluku Tenggara, khususnya di desa Saparua. Sasi adalah tradisi adat yang digunakan untuk melindungi dan menjaga sumber daya alam, terutama laut dan terumbu karang, dengan cara memberlakukan larangan tertentu terhadap penangkapan ikan atau pengambilan sumber daya laut selama periode tertentu.</p>
+            <p class=" text-center">Dalam praktiknya, Sasi melibatkan kesepakatan komunitas untuk tidak melakukan penangkapan ikan di wilayah tertentu selama beberapa waktu. Ini membantu mencegah penangkapan ikan berlebihan dan memungkinkan populasi ikan dan ekosistem laut untuk pulih. Tradisi Sasi juga mengajarkan nilai-nilai konservasi dan tanggung jawab bersama dalam menjaga lingkungan laut yang penting bagi mata pencaharian dan keberlangsungan hidup masyarakat setempat.</p>
+        </div>
+    </section>
+
+
+    <script>
+        const btn = document.getElementById('menu-btn')
+        const nav = document.getElementById('menu')
+
+        btn.addEventListener('click', () => {
+        btn.classList.toggle('open')
+        nav.classList.toggle('flex')
+        nav.classList.toggle('hidden')
+        })
+      </script>
+</body>
+</html>
